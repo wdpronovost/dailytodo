@@ -8,7 +8,7 @@ const app = express();
 
 const mongoURL = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@wdpcluster-ebucw.mongodb.net/dailytodoDB`;
 
-mongoose.connect(mongoURL(), {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(mongoURL, {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
