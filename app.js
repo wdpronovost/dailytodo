@@ -12,7 +12,7 @@ mongoose.connect(mongoURL(), {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use ('https://dailytodo.wdpronovost.com/', require('./routes/api.js'));
+app.use ('', require('./routes/api.js'));
 
 
 app.use(express.static("public"));
