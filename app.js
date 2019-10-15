@@ -1,9 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
-const mongoURL = require('./helpers/mongodb.js');
+// const mongoURL = require('./helpers/mongodb.js');
+require("dotenv").config();
 
 const app = express();
+
+const mongoURL = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@wdpcluster-ebucw.mongodb.net/dailytodoDB`;
 
 mongoose.connect(mongoURL(), {useNewUrlParser: true, useUnifiedTopology: true});
 
