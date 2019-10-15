@@ -11,6 +11,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"body-parser": "^1.19.0",
+		"dotenv": "^8.1.0",
 		"ejs": "^2.7.1",
 		"ejs-lint": "^0.3.0",
 		"express": "^4.17.1",
@@ -18,7 +19,6 @@
 		"nodemon": "^1.19.3"
 	},
 	"devDependencies": {
-		"dotenv": "^8.1.0",
 		"eslint": "^6.5.0",
 		"eslint-plugin-ejs": "0.0.2",
 		"eslint-plugin-ejs-js": "^0.1.0"
